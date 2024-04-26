@@ -1,0 +1,8 @@
+# QNN MNIST
+
+Here, I elaborated on the software engineering aspects of [this example](https://www.tensorflow.org/quantum/tutorials/mnist) from tensorflow.
+
+The jupyter notebook is unchanged, what has been added:
+- added UML use-case diagram for the implementation
+- added `checklist.md` as a personal checklist, according to concepts of SE, to go through in such implementations (A scientific demo in the quantum software field)
+- define a guideline on how to do future real-world projects similiar to this(how to start, how to implement, how to present)
