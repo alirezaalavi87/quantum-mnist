@@ -1,0 +1,208 @@
+<mxfile host="app.diagrams.net" modified="2024-05-04T11:07:18.913Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" etag="Rq64fc0OaF3ua_eMvaVs" version="24.3.1" type="device">
+  <diagram name="Page-1" id="b5b7bab2-c9e2-2cf4-8b2a-24fd1a2a6d21">
+    <mxGraphModel dx="3300" dy="3987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-1" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="-1850" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-3" value="trained QNN model" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=80;height=50;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-1970" width="690" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-4" value="Get dataset of numbers" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-1855" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-5" value="classify numbers into 3s and 6s" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="-1855" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-10" value="return results" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-1690" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-11" value="&amp;lt;&amp;lt; include &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-4" target="zoj8rZFRam4I_VQGuIJq-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="750" y="-1730" as="sourcePoint" />
+            <mxPoint x="910" y="-1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-13" value="&amp;lt;&amp;lt; include &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-4" target="zoj8rZFRam4I_VQGuIJq-10">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="-1730" as="sourcePoint" />
+            <mxPoint x="880" y="-1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-14" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-1" target="zoj8rZFRam4I_VQGuIJq-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="-1700" as="sourcePoint" />
+            <mxPoint x="830" y="-1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-16" value="MNIST Classificatinon QNN" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=80;height=60;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-1380" width="1100" height="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-17" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="-475" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-18" value="Run code" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="-480" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-19" value="Load raw MNIST data from keras" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="-485" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-20" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-18" target="zoj8rZFRam4I_VQGuIJq-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="-150" as="sourcePoint" />
+            <mxPoint x="880" y="-150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-21" value="Filter dataset to only 3s and 6s" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-290" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-22" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-23" target="zoj8rZFRam4I_VQGuIJq-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="-150" as="sourcePoint" />
+            <mxPoint x="880" y="-150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-23" value="Load the data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-485" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-25" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-23" target="zoj8rZFRam4I_VQGuIJq-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="760" y="-390" as="sourcePoint" />
+            <mxPoint x="760" y="-265" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-26" value="Visualize using mathplotlib " style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-670" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-27" value="&amp;lt;&amp;lt; extends &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-26" target="zoj8rZFRam4I_VQGuIJq-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="690" y="-530" as="sourcePoint" />
+            <mxPoint x="850" y="-530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-28" value="Downscale images to 4x4 pixles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="-350" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-29" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-23" target="zoj8rZFRam4I_VQGuIJq-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="710" y="-360" as="sourcePoint" />
+            <mxPoint x="870" y="-360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-30" value="Remove contradictory examples" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="-280" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-31" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-23" target="zoj8rZFRam4I_VQGuIJq-30">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="699" y="-415" as="sourcePoint" />
+            <mxPoint x="970" y="-340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-32" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-17" target="zoj8rZFRam4I_VQGuIJq-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="780" y="-160" as="sourcePoint" />
+            <mxPoint x="830" y="-210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-35" value="Convert binary images to cirq circuits" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="-690" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-36" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-23" target="zoj8rZFRam4I_VQGuIJq-40">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="719" y="-395" as="sourcePoint" />
+            <mxPoint x="990" y="-320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-37" value="Encode classical truncated images into qubits" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="-820" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-38" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-35" target="zoj8rZFRam4I_VQGuIJq-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="-440" as="sourcePoint" />
+            <mxPoint x="880" y="-545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-40" value="Encode the data as&amp;nbsp; quantum circuits" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-580" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-41" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-40" target="zoj8rZFRam4I_VQGuIJq-35">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="-440" as="sourcePoint" />
+            <mxPoint x="860" y="-535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-42" value="Convert &lt;code dir=&quot;ltr&quot;&gt;Cirq&lt;/code&gt; circuits to tensors for &lt;code&gt;tensorflow-quantum&lt;/code&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="-590" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-43" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-40" target="zoj8rZFRam4I_VQGuIJq-42">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="720" y="-440" as="sourcePoint" />
+            <mxPoint x="860" y="-535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-44" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-10" target="zoj8rZFRam4I_VQGuIJq-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="-1930" as="sourcePoint" />
+            <mxPoint x="850" y="-1980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-45" value="Create Quantum Neural Network" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-1150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-46" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-18" target="zoj8rZFRam4I_VQGuIJq-45">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-435" as="sourcePoint" />
+            <mxPoint x="580" y="-440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-48" value="Build the model circuit" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-1340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-49" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-45" target="zoj8rZFRam4I_VQGuIJq-48">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="-645" as="sourcePoint" />
+            <mxPoint x="490" y="-650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-50" value="Create a QNN model circuit" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="-1340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-51" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-48" target="zoj8rZFRam4I_VQGuIJq-50">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="650" y="-1115.5" as="sourcePoint" />
+            <mxPoint x="810" y="-1115.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-52" value="wrap the circuit in a tfq-keras model" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="-1150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-53" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-45" target="zoj8rZFRam4I_VQGuIJq-52">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="540" y="-1140" as="sourcePoint" />
+            <mxPoint x="610" y="-1295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-54" value="Optimize model" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="-1150" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-55" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-52" target="zoj8rZFRam4I_VQGuIJq-54">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="830" y="-1040" as="sourcePoint" />
+            <mxPoint x="970" y="-1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-56" value="Train the quantum model" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="-1040" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zoj8rZFRam4I_VQGuIJq-57" value="&amp;lt;&amp;lt; includes &amp;gt;&amp;gt;" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="zoj8rZFRam4I_VQGuIJq-52" target="zoj8rZFRam4I_VQGuIJq-56">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="620" y="-1095" as="sourcePoint" />
+            <mxPoint x="760" y="-1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
