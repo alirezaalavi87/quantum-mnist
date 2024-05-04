@@ -25,6 +25,8 @@ A personal checklist, according to concepts of SE, to go through in such impleme
 - [ ] Implement (*Beware of premature optimization!)
     - [ ] Implement the most basic and simplified case
     - [ ] Incrementally add the rest
+    - [ ] Make the environment as deterministic as possible -> Add strict linting, add version checking for your env, strict dotfiles(.python-version , .nvmrc, .gitattributes, .editorconfig)
+    to make sure the code and it's execution is as reproducible and homogeneous as possible
 - [ ] Refine or re-iterate implementation if needed
 - [ ] Optimize
 - [ ] Write execution tests to be sure the demo can be accessed and ran in the future, and to have indicators to know when the project is outdated and irrelevant
@@ -33,3 +35,5 @@ A personal checklist, according to concepts of SE, to go through in such impleme
 
 ## Notes
 - Make sure to keep track of the references that the project is moving based off of and cite them(have organized bibliography)
+- Beware of premature optimization. First make sure the project is on the right track, the thought process is correct, and get some working versions before starting to optimize
+- Make sure the project (at least the docs) are peer-reviewed, by people on the spectrum(from most competent to least competent) of your intent audience, and make sure it is understandable by all of them
